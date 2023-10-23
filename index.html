@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>动态烟花</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #firework-container {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="addressInput" placeholder="输入地址">
+    <button id="loadFireworksButton">加载烟花</button>
+    <div id="firework-container"></div>
+    <script>
+        function loadFireworks() {
+            const address = document.getElementById('addressInput').value;
+            // 根据地址加载动态烟花
+            // 这里可以使用合适的库或代码来加载动态烟花效果
+            // 例如，使用canvas或SVG来绘制烟花效果
+            // 这是一个简单示例，使用console输出来模拟加载效果
+            console.log(`加载动态烟花效果：${address}`);
+        }
+
+        const loadButton = document.getElementById('loadFireworksButton');
+        loadButton.addEventListener('click', loadFireworks);
+    </script>
+</body>
+</html>
